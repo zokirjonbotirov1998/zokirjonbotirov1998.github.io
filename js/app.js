@@ -37,7 +37,7 @@ window.onload = function() {
         micBoxRadialTimer.style.display = 'block';
         plyrControls.classList.remove('active');
 
-        mediaRecorder = new MediaRecorder(stream, { mimeType: 'audio/webm' }); // Use webm or mp3
+        mediaRecorder = new MediaRecorder(stream, { mimeType: 'audio/webm' });
         mediaRecorder.ondataavailable = function(event) {
             if (event.data.size > 0) {
                 recordedChunks.push(event.data);
@@ -90,6 +90,16 @@ window.onload = function() {
                 btnAgain.style.display = 'block';
 
                 console.log("Recording stopped manually.");
+            } else {
+                // Agar "Start" tugmasi bosilgan bo'lsa, yozishni boshlash
+                navigator.mediaDevices.getUserMedia({ audio: true })
+                    .then(function(stream) {
+                        startRecording(stream); // Foydalanuvchi tugmani bosganda yozishni boshlang
+                    })
+                    .catch(function(err) {
+                        console.error("Mikrofonga ulanishda xatolik: ", err);
+                        alert("Mikrofonni olishda muammo yuz berdi.");
+                    });
             }
         });
 
