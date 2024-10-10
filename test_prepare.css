@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+header nav {
+    width: 100%;
+    background-color: #2196F3;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .clock {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header nav .clock i {
+    color: white;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+header nav .clock p {
+    color: white;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 7px;
+    margin: 0;
+}
+
+section .container .instruction__title {
+    text-align: center;
+    font-weight: 800;
+    color: #284664;
+    margin: 20px 0 25px;
+    font-size: 28px;
+}
+
+section .container .instruction__list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section .container .instruction__list .instruction__item {
+    font-size: 16px;
+    color: #282828;
+    margin-bottom: 35px;
+}
+
+.instruction__link {
+    color: #007aff;
+}
+
+.next_btn {
+    display: block;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.btn_button button,
+.next_btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 40px;
+    padding: 0 16px;
+    background-color: #2196F3;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    /* Webkit */
+    -webkit-appearance: none; /* iOS qurilmalarda tugmalarni optimallashtirish */
+}
+
+.next_btn a i {
+    font-size: 12px;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
+.mic-box_contents {
+    width: 100%;
+    min-height: 480px;
+    border-radius: 8px;
+    border: solid 1px #d4dae0;
+    background-color: #f3f3f3;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    position: relative;
+    /* Webkit */
+    -webkit-overflow-scrolling: touch; /* Mobil qurilmalarda yaxshiroq skrollash */
+}
+
+.mic-box_contents .title {
+    margin: 6rem 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #284664;
+    text-align: center;
+}
+
+.mic-box_contents .mic-box_record-part {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.mic-box_contents .mic-box_record-part .mic-box_radial-timer {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    margin: 5px auto;
+}
+
+.test-time-duration {
+    letter-spacing: 1px;
+}
+
+.mic-box__note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.mic-box__note p {
+    color: #333;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0 0 2px;
+}
+
+.btn_button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn_button button {
+    margin: 0 10px;
+}
+
+.btn_button .btn_again {
+    background-color: #30ad11;
+    display: none;
+}
+
+.btn-again.active {
+    display: block;
+}
+
+.btn_button button.btn-skip {
+    background-color: #30ad11;
+}
+
+.plyr__controls {
+    background-color: #fff;
+    padding: 0;
+    margin-top: 20px;
+    display: none;
+}
+
+.plyr__controls.active {
+    display: flex;
+    align-items: center;
+}
+
+.speaking-test .plyr__controls .plyr__controls__item:first-child {
+    width: 96px;
+    height: 40px;
+    background-color: #2196F3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.plyr__controls {
+    color: white;
+    width: 90%;
+}
+
+.plyr__progress__container {
+    background-color: white;
+    margin-left: 0;
+    padding: 8px;
+}
+
+.plyr__progress {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.plyr__progress input {
+    color: #2196F3;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.speaking-test .plyr__controls .plyr__controls__item:first-child i {
+    font-size: 18px;
+}
+
+#currentTimeDisplay {
+    margin-right: 20px;
+    font-weight: 700;
+    color: #2196F3;
+}
+
+.part-number {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.part-number button {
+    background-color: #30ad11;
+    position: absolute;
+    right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+}
+
+.title-part {
+    color: #2196F3;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.card .btn_button {
+    display: none;
+}
+
+.card-header .btn-skip i {
+    padding-top: 2px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 876px) {
+    section .container {
+        padding: 5px 25px;
+    }
+    section .container .instruction__list .instruction__item {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) { /* O'lchovlarni iPhone uchun optimallashtirish */
+    header nav .clock p {
+        font-size: 20px; /* Font o'lchovini kichik ekranlarda kamaytirish */
+    }
+    
+    .mic-box_contents .title {
+        font-size: 24px; /* Kichik ekranlarda unchalik katta emas */
+    }
+
+    .mic-box_contents .mic-box_radial-timer {
+        width: 50px; /* Kichik ekranlarda radial timer o'lchovini kamaytirish */
+        height: 50px; /* Kichik ekranlarda radial timer o'lchovini kamaytirish */
+    }
+
+    .btn_button button,
+    .next_btn a {
+        width: 100%; /* Tugmalar kengligini 100% qiling */
+    }
+}
+
+@media (max-width: 576px) {
+    .part-number button {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        border-radius: 0;
+    }
+    .btn-skip i {
+        padding-top: 2px;
+    }
+}

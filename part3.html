@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/test_prepare.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="clock">
+                <i class="fa-regular fa-clock"></i></i>
+                <p class="test-time-duration test-clock">02:00</p>
+                <a class="btn-download d-none" href="#" download="recording.wav">Download Recording</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="mic-box_contents card">
+                <div class="part-number card-header py-3">
+                    <h1 class="title-part">Part 3:</h1>
+                    <button class="btn-skip start-now">Start Now <i class="fa-regular mx-1 fa-circle-play"></i></button>
+                    <button class="btn-skip btn-danger next_question d-none"><a class="text-white text-decoration-none" href="/part_1_2.html">STOP <i class="fa-solid mx-1 fa-angles-right"></i></a></button>
+                </div>
+                <div class="mic-box_record-part speaking-test mt-4">
+                    <div class="mic-box_radial-timer">
+                        <img src="/img/icon_speaking.svg" alt="">
+                    </div>
+                    <div class="plyr__controls">
+                        <button class="plyr__controls__item plyr__control" id="playButton" style="width: 90px; height: 40px;">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </button>
+                        <div class="plyr__progress__container" style="flex: 1;">
+                            <div class="plyr__progress" style="width: 100%;">
+                                <input data-plyr="seek" type="range" min="0" max="100" value="0" id="plyr-seek" style="--value: 0%;">
+                                
+                                <div id="currentTimeDisplay" style="margin-left: 10px;">-00:00</div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="mic-box__note">
+                        <p>You have 20 seconds to speak…</p>
+                        <p>To complete this activity, you must allow access to your system's microphone. <i class="fa-regular fa-circle-play" style="color: #2196F3;"></i>
+                            Click </p>
+                    </div>
+                </div>
+                <div class="btn_button">
+                    <button id="js-record" class="test-btn" data-time-record="20">
+                        Test Microphone &nbsp; <i class="fa-regular fa-circle-play" style="font-size: 18px;"></i>
+                    </button>
+                    <button class="btn_again"><a href="/step_mic.html"></a>
+                        Test Mick Again &nbsp; <i class="fa-solid fa-arrow-rotate-right"></i></a>
+                    </button>
+                    <button class="btn-skip"><a href=""></a>
+                        Skip &nbsp; <i class="fa-solid fa-arrow-right-to-bracket" style="font-size: 18px;"></i></a>
+                    </button>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <script src="/https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="/js/part2.js"></script>
+</body>
+
+</html>
